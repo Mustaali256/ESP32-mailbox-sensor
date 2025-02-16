@@ -58,6 +58,10 @@ const char* password = "<Your-WiFi-password>";
 #define USER_DOMAIN "<Your-public-IP-address>"
 ```
 - **GPIO Pins**:
+  
+  **Make sure your pin supports RTC or it will not wake up**
+
+  I have set my pin to 12 because that worked for me, however depending on your board it may not work for you so please try different pins.
 ```cpp
 const int sensorPin = <pin>; // Set your GPIO Pin to match the break beam sensor pin
 const int ledPin = 2; // Usually the led on the board is at pin 2
